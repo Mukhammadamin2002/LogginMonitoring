@@ -1,0 +1,21 @@
+linux:
+  hosts:
+    main-ubuntu:
+      ansible_host: 35.157.34.1
+      ansible_user: ubuntu
+      ansible_sudo_pass: 1234
+      ansible_ssh_private_key_file: ~/.ssh/id_rsa
+      # agent_server: 35.157.108.164
+      # agent_serveractive: 35.157.108.164
+      # zabbix_url: http://zabbix.example.com
+      # zabbix_api_use: true
+      # zabbix_api_user: Admin
+      # zabbix_api_pass: Zabbix
+      # zabbix_create_host: present
+      # zabbix_host_groups:
+      # - Linux servers
+      # zabbix_link_templates:
+      # - Template OS Linux
+      # zabbix_macros:
+      # - macro_key: apache_type
+      #   macro_value: reverse_proxy
