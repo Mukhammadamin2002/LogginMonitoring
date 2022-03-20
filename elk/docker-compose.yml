@@ -20,6 +20,7 @@ services:
 
   logstash:
     image: docker.elastic.co/logstash/logstash:7.0.1
+    container_name: logstash
     restart: always
     volumes: 
     - ./config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro,Z
@@ -41,6 +42,7 @@ services:
 
   kibana:
     image: docker.elastic.co/kibana/kibana:7.0.1
+    container_name: kibana
     restart: always
     ports:
       - '5601:5601'
