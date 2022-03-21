@@ -7,7 +7,12 @@ services:
     environment:
       - GF_SERVER_ROOT_URL=http://localhost:3000/
       - GF_SECURITY_ADMIN_PASSWORD=secret
+    networks:
+     - elk_stack
     volumes:
     - grafana_data:/var/lib/grafana
 volumes:
   grafana_data:
+networks:
+ elk_stack:
+   driver: bridge
